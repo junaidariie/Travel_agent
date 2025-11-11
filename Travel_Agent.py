@@ -4,9 +4,14 @@ from langchain_openai import ChatOpenAI
 from langchain_tavily import TavilySearch
 from langchain.callbacks.streaming_stdout import StreamingStdOutCallbackHandler
 import json
+import streamlit as st
 from dotenv import load_dotenv
 
 load_dotenv()
+groq_key = st.secrets["GROQ_API_KEY"]
+google_key = st.secrets["GOOGLE_API_KEY"]
+openai_key = st.secrets["OPENAI_API_KEY"]
+tavily_key = st.secrets["TAVILY_API_KEY"]
 
 
 
@@ -131,3 +136,4 @@ graph.add_edge("research_node", "trip_planner_node")
 graph.add_edge("trip_planner_node", END)
 
 travel_agent = graph.compile()
+
