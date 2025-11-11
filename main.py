@@ -8,6 +8,11 @@ from langchain_tavily import TavilySearch
 from dotenv import load_dotenv
 
 load_dotenv()
+groq_key = st.secrets["GROQ_API_KEY"]
+google_key = st.secrets["GOOGLE_API_KEY"]
+openai_key = st.secrets["OPENAI_API_KEY"]
+tavily_key = st.secrets["TAVILY_API_KEY"]
+
 
 # Page config
 st.set_page_config(
@@ -442,4 +447,5 @@ else:
     for col, emoji, label in zip(cols, emojis, labels):
         with col:
             st.markdown(f"<div style='text-align: center; font-size: 48px;'>{emoji}</div>", unsafe_allow_html=True)
+
             st.markdown(f"<div style='text-align: center; color: #666;'>{label}</div>", unsafe_allow_html=True)
