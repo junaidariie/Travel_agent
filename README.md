@@ -5,7 +5,7 @@
 
 This project builds personalized, visually appealing travel itineraries using real-time search, natural language generation, and a LangGraph workflow. It behaves like a premium travel consultant — crafting brochures with emojis, headers, and up-to-date recommendations.
 
-A FastAPI backend is also included and ready for deployment. The only reason it’s not publicly hosted is because the author doesn’t have access to a Claude service that part of the backend was intended to use — otherwise, the API is fully deployable with OpenAI + Tavily.
+A FastAPI backend is also included and ready for deployment. The only reason it’s not publicly hosted is because i don't have access to a Claude service that part of the backend was intended to use — otherwise, the API is fully deployable with OpenAI + Tavily.
 
 ---
 
@@ -126,11 +126,3 @@ Deployable on:
 MIT License
 
 ---
-
-## 🙌 Credits
-
-- LangChain & LangGraph
-- OpenAI
-- Tavily
-- Streamlit
-- FastAPI
